@@ -33,34 +33,50 @@
 
 <p>A PHP Wrapper for Wunderlist2 API</p>
 
-<p>Thanks goes out to these two Github projects, they gave me insight in the working of the Wunderlist API and the ability to get the functions working.
-<a href="https://github.com/bsmt/wunderpy">https://github.com/bsmt/wunderpy</a>
-<a href="https://github.com/rushis/Wunderlist2ApiJS">https://github.com/rushis/Wunderlist2ApiJS</a></p>
-
-<p>Extra's:
-ical.php: this file generates a valid ical file which uses the due dates of tasks to generate a "to-do" calendar. For mac users: <a href="https://www.apple.com/findouthow/mac/#subscribeical">https://www.apple.com/findouthow/mac/#subscribeical</a></p>
-
-<p>Currently supported methods:</p>
+<ul>
+<li>Current version: 1.00</li>
+</ul><p>Thanks goes out to these two Github projects, they gave me insight in the working of the Wunderlist API and the ability to get the functions working.</p>
 
 <ul>
-<li>Login to Wunderlist API</li>
-<li>Get all tasks</li>
-<li>Get all lists</li>
-<li>Get all tasks within a list</li>
-<li>Add a list</li>
-<li>Add a task</li>
+<li><a href="https://github.com/bsmt/wunderpy">https://github.com/bsmt/wunderpy</a></li>
+<li><a href="https://github.com/rushis/Wunderlist2ApiJS">https://github.com/rushis/Wunderlist2ApiJS</a></li>
+</ul><p>Extra's:
+ical.php: this file generates a valid ical file which uses the due dates of tasks to generate a "to-do" calendar. </p>
+
+<ul>
+<li>For mac agenda users: <a href="https://www.apple.com/findouthow/mac/#subscribeical">https://www.apple.com/findouthow/mac/#subscribeical</a>
+</li>
+<li>For Google calendar users: <a href="https://support.google.com/calendar/answer/37118?hl=en">https://support.google.com/calendar/answer/37118?hl=en</a>
+</li>
+<li>For other apps/software: check the ability to (auto) import ical files to your app/software</li>
+</ul><p>Currently supported methods (Examples are included in the /examples/ folder)</p>
+
+<ul>
+<li>Login to Wunderlist API (15/07/2013 - v0.1)</li>
+<li>Get all tasks (15/07/2013 - v0.1)</li>
+<li>Get all lists (15/07/2013 - v0.1)</li>
+<li>Get all tasks within a list (15/07/2013 - v0.1)</li>
+<li>Add a list (16/07/2013 - v0.2)</li>
+<li>Add a task (16/07/2013 - v0.2)</li>
+<li>Set due date for a task (16/07/2013 - v0.2)</li>
+<li>Add notes to a task (16/07/2013 - v0.2)</li>
+<li>Delete a task (16/07/2013 - v0.2)</li>
+<li>Delete list (16/07/2013 - v0.2)</li>
+<li>Get reminders (17/07/2013 - v0.9)</li>
+<li>Set reminder for a task (17/07/2013 - v0.9)</li>
 </ul><p>Subtasks are automatically added to their parent instead as a single task
 By setting a parameter to the functions for tasks you can specify if completed tasks should be hidden or not.</p>
 
-<p>Future - but soon enough - functions:</p>
+<p>Future planned updates:</p>
 
 <ul>
-<li>Set due date for a task</li>
-<li>Add notes to a task</li>
-<li>Delete a task</li>
-<li>Delete list</li>
-<li>Get reminders</li>
-<li>Set reminder for a task</li>
+<li>1st priority: add usable errors to the class instead of (bool)false</li>
+<li>2nd priority: Get tasks for today</li>
+<li>2nd priority: Get tasks for this week</li>
+<li>2nd priority: Get all tasks that are overdue</li>
+<li>3th priority: Filter tasklist by due date</li>
+<li>3th priority: Filter tasklist by starred tasks</li>
+<li>4th priority: Add iCal export as a function to the class instead as a single file</li>
 </ul>
       </section>
       <footer>
