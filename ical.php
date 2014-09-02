@@ -52,7 +52,7 @@ PRODID:-//Wunderlist2-PHP//Tasks//NL\n";
 		
 			// Start ical output for the parent task
 			$output .= "BEGIN:VEVENT
-SUMMARY:".$wunderlist->lists[ $task['list_id'] ]['title']." - ".$task['title']."
+SUMMARY:".$lists[ $task['list_id'] ]['title']." - ".$task['title']."
 UID:".$task['id']."
 STATUS: CONFIRMED
 DTSTART:" . date(DATE_ICAL, strtotime($task['due_date'])) . "
@@ -70,7 +70,7 @@ END:VEVENT\n";
 					// Maybe in the future subtasks will have due dates aswel
 					// Start ical output for the subtask
 					$output .= "BEGIN:VEVENT
-SUMMARY:".$wunderlist->lists[ $task['list_id'] ]['title']." - ".$task['title']." - ".$subtask['title']."
+SUMMARY:".$lists[ $task['list_id'] ]['title']." - ".$task['title']." - ".$subtask['title']."
 UID:".$subtask['id']."
 STATUS: CONFIRMED
 DTSTART:" . date(DATE_ICAL, strtotime($task['due_date'])) . "
