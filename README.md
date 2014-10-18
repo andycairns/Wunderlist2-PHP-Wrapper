@@ -1,3 +1,6 @@
+18 October 2014: Did a check to see if the API was working with Wunderlist V3. Looks like there haven't been any changed since the tested features still work using this PHP API Wrapper. Enjoy!
+
+=======================
 18 March 2014: Added the option to add a task as a subtask
 
 =======================
